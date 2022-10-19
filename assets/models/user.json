@@ -1,0 +1,28 @@
+{
+    "value": 0,
+    "message": "login berhasil",
+    "user": {
+        "user_id": "1",
+        "username": "admin",
+        "password": "202cb962ac59075b964b07152d234b70",
+        "nik": "021901001",
+        "nama": "ADMINISTRATOR",
+        "kode_kantor": "1",
+        "cabang_id": "1",
+        "area_id": "1",
+        "email": null,
+        "group_menu": "1",
+        "area": "1",
+        "tgl_expired": "2020-12-31",
+        "flg_blok": "0",
+        "jabatan_id": "3",
+        "unit_id": "2",
+        "divisi_id": "1",
+        "rank_id": "3",
+        "user_id_induk": "1",
+        "flag": null,
+        "foto": null,
+        "fcm_token": "891ee1cf-4ad7-4dd7-9bbb-70545fc0ed51",
+        "jabatan": "STAFF"
+    }
+}
