@@ -166,7 +166,7 @@ class AbsensiView extends GetView<AbsensiController> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.orange,
+        backgroundColor: Colors.blue,
         child: Icon(Icons.add),
         onPressed: () {
           Get.toNamed(Routes.INPUTABSEN);

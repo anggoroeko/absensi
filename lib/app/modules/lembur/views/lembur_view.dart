@@ -77,7 +77,8 @@ class LemburView extends GetView<LemburController> {
                                   padding: EdgeInsets.all(8),
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(15),
-                                      border: Border.all(color: Colors.blue)),
+                                      border: Border.all(
+                                          color: Colors.greenAccent)),
                                   child: ListTile(
                                     trailing: Icon(Icons.more_vert),
                                     leading: CircleAvatar(
@@ -95,7 +96,7 @@ class LemburView extends GetView<LemburController> {
                                       backgroundColor: controller
                                                   .listData[index]['status'] ==
                                               '0'
-                                          ? Colors.orange
+                                          ? Colors.greenAccent
                                           : Colors.green,
                                     ),
                                     title: Text(
@@ -136,7 +137,7 @@ class LemburView extends GetView<LemburController> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.orange,
+        backgroundColor: Colors.blue,
         onPressed: () =>
             calenderC.showMyDialogLembur(context, calenderC.selectedDay),
         child: Icon(Icons.add),

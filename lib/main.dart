@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:absensi/app/controllers/auth_controller.dart';
 import 'package:absensi/app/utils/loading.dart';
 import 'package:flutter/material.dart';
@@ -11,6 +13,7 @@ void main() async {
   await GetStorage.init();
   await OneSignal.shared.setAppId("205ebac3-202f-4a4a-b1f1-0cc7e276a77e");
   runApp(MyApp());
+  HttpOverrides.global = MyHttpOverrides();
 }
 
 class MyApp extends StatelessWidget {
@@ -35,5 +38,14 @@ class MyApp extends StatelessWidget {
 
           return Loading();
         });
+  }
+}
+
+class MyHttpOverrides extends HttpOverrides {
+  @override
+  HttpClient createHttpClient(SecurityContext? context) {
+    return super.createHttpClient(context)
+      ..badCertificateCallback =
+          (X509Certificate cert, String host, int port) => true;
   }
 }

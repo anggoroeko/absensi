@@ -12,9 +12,14 @@ class AbsensiController extends GetxController {
   bool isLoading = false;
 
   Future listAbsensi() async {
-    final response = await http
-        .post(Uri.parse(BaseUrl.absen), body: {"nik": box.read('nik')});
-    final data = jsonDecode(response.body);
+    var headers = {'authorization': 'Bearer ' + box.read('access_token') + ''};
+
+    final bodyMsg = {"nik": box.read('nik')};
+
+    final response = await http.post(Uri.parse(BaseUrl.absen),
+        headers: headers, body: bodyMsg);
+
+    final data = jsonDecode(response.body); // JSON TO ARRAY
     listData.value = data['results'];
   }
 
@@ -38,7 +43,7 @@ class AbsensiController extends GetxController {
             ),
           ),
           actions: <Widget>[
-            FlatButton(
+            TextButton(
               child: Text('OK'),
               onPressed: () {
                 isLoading
@@ -49,7 +54,7 @@ class AbsensiController extends GetxController {
                 Navigator.of(context).pop();
               },
             ),
-            FlatButton(
+            TextButton(
               child: Text('Cancel'),
               onPressed: () {
                 Navigator.of(context).pop();

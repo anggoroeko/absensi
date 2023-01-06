@@ -1,5 +1,6 @@
 class BaseUrl {
-  static String url = "https://yobieamora.com/api/absen";
+  // static String url = "https://yobieamora.com/api/absen";
+  static String url = "https://absen.api.persahabatan.co.id/app/apiabsensi";
   static String slider = "$url/slider";
   static String login = "$url/login.php";
   static String absen = "$url/data_absensi.php";

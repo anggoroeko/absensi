@@ -48,6 +48,7 @@ class User {
   String? namaDivisi;
   String? namaKantor;
   String? alamatKantor;
+  String? accessToken;
 
   User(
       {this.userId,
@@ -74,7 +75,8 @@ class User {
       this.jabatan,
       this.namaDivisi,
       this.namaKantor,
-      this.alamatKantor});
+      this.alamatKantor,
+      this.accessToken});
 
   User.fromJson(Map<String, dynamic> json) {
     userId = json['user_id'];
@@ -102,6 +104,7 @@ class User {
     namaDivisi = json['nama_divisi'];
     namaKantor = json['nama_kantor'];
     alamatKantor = json['alamat_kantor'];
+    accessToken = json['access_token'];
   }
 
   Map<String, dynamic> toJson() {
@@ -131,6 +134,7 @@ class User {
     data['nama_divisi'] = namaDivisi;
     data['nama_kantor'] = namaKantor;
     data['alamat_kantor'] = alamatKantor;
+    data['access_token'] = accessToken;
     return data;
   }
 }

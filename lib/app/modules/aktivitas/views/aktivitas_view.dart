@@ -86,11 +86,12 @@ class AktivitasView extends GetView<AktivitasController> {
                                 child: Container(
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(15),
-                                      border: Border.all(color: Colors.blue)),
+                                      border: Border.all(
+                                          color: Colors.greenAccent)),
                                   child: ListTile(
                                     trailing: Icon(Icons.more_vert),
                                     leading: CircleAvatar(
-                                        backgroundColor: Colors.orange,
+                                        backgroundColor: Colors.greenAccent,
                                         child: Icon(
                                           Icons.book,
                                           color: Colors.white,
@@ -115,7 +116,7 @@ class AktivitasView extends GetView<AktivitasController> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.orange,
+        backgroundColor: Colors.blue,
         onPressed: () =>
             calenderC.showMyDialogAktivitas(context, calenderC.selectedDay),
         child: Icon(Icons.add),

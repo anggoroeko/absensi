@@ -23,7 +23,7 @@ class MenuAplikasi extends StatelessWidget {
                     children: [
                       Icon(
                         Icons.access_time,
-                        color: Colors.orange,
+                        color: Colors.blue,
                         size: 50,
                       ),
                       SizedBox(
@@ -52,7 +52,7 @@ class MenuAplikasi extends StatelessWidget {
                     children: [
                       Icon(
                         Icons.edit,
-                        color: Colors.orange,
+                        color: Colors.blue,
                         size: 50,
                       ),
                       SizedBox(
@@ -81,7 +81,7 @@ class MenuAplikasi extends StatelessWidget {
                     children: [
                       Icon(
                         Icons.date_range,
-                        color: Colors.orange,
+                        color: Colors.blue,
                         size: 50,
                       ),
                       SizedBox(
@@ -110,7 +110,7 @@ class MenuAplikasi extends StatelessWidget {
                     children: [
                       Icon(
                         Icons.local_activity,
-                        color: Colors.orange,
+                        color: Colors.blue,
                         size: 50,
                       ),
                       SizedBox(
@@ -139,7 +139,7 @@ class MenuAplikasi extends StatelessWidget {
                     children: [
                       Icon(
                         Icons.person,
-                        color: Colors.orange,
+                        color: Colors.blue,
                         size: 50,
                       ),
                       SizedBox(
@@ -168,7 +168,7 @@ class MenuAplikasi extends StatelessWidget {
                     children: [
                       Icon(
                         Icons.settings_applications,
-                        color: Colors.orange,
+                        color: Colors.blue,
                         size: 50,
                       ),
                       SizedBox(

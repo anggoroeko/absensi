@@ -62,6 +62,7 @@ class AuthController extends GetxController {
       box.write('nama_kantor', userJson.value.namaKantor);
       box.write('alamat_kantor', userJson.value.alamatKantor);
       box.write('isAuth', true);
+      box.write('access_token', userJson.value.accessToken);
       Get.offNamed(Routes.HOME);
       refresh();
       update();

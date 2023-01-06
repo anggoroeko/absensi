@@ -49,7 +49,7 @@ class LoginView extends GetView<LoginController> {
                                       height: 10,
                                     ),
                                     Text(
-                                      "Attandance App",
+                                      "Attandance Apps",
                                       style: TextStyle(
                                           color: Colors.black,
                                           fontSize: 20,
@@ -65,7 +65,7 @@ class LoginView extends GetView<LoginController> {
                                   Container(
                                     alignment: Alignment.centerRight,
                                     child: Image.asset(
-                                      "assets/images/jam.png",
+                                      "assets/images/logo_rsp.png",
                                       width: 150,
                                       height: 100,
                                     ),
@@ -138,7 +138,7 @@ class LoginView extends GetView<LoginController> {
                         height: 60,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(50),
-                            color: Colors.orange),
+                            color: Colors.lightBlue),
                         child: Center(
                           child: Text(
                             "Login",

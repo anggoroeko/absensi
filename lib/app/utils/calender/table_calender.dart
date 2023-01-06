@@ -23,7 +23,7 @@ class CalenderPage extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: Container(
           decoration: BoxDecoration(
-              border: Border.all(color: Colors.orange),
+              border: Border.all(color: Colors.blue),
               borderRadius: BorderRadius.circular(10)),
           child: TableCalendar(
               firstDay: DateTime.utc(2010, 10, 16),
@@ -38,8 +38,6 @@ class CalenderPage extends StatelessWidget {
                 calenderC.tanggalview.value =
                     DateFormat.yMMMMd().format(selectedDay);
                 var tanggal = DateFormat("yyyy-MM-dd").format(selectedDay);
-
-                print('EKO PAMUJI');
 
                 if (name == 'Aktivitas') {
                   await aktivitas.listAktivitas(tanggal);
@@ -58,7 +56,6 @@ class CalenderPage extends StatelessWidget {
               ),
               calendarBuilders: CalendarBuilders(
                 selectedBuilder: (context, date, _) {
-                  print('RAMELAN EKO PAMUJI');
                   return Container(
                       margin: const EdgeInsets.all(5.0),
                       alignment: Alignment.center,
@@ -74,7 +71,7 @@ class CalenderPage extends StatelessWidget {
                     margin: const EdgeInsets.all(5.0),
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
-                        color: Colors.orange,
+                        color: Colors.blue,
                         borderRadius: BorderRadius.circular(8.0)),
                     child: Text(
                       date.day.toString(),
